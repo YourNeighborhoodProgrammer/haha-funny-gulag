@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "Google Classroom Gulag",
+	"description": "Comrades, we must study, so get off your PH and get to work, our nation is in our hands!",
+	"version": "0.9.2",
+	"action": {
+		"default_popup": "hello.html"
+	},
+	"permissions": ["activeTab", "tabs"],
+	"background": {
+		"service_worker": "bg.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["help.js"]
+		}
+	]
+}
