@@ -11,8 +11,8 @@ chrome.runtime.onMessage.addListener(
 );
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.url !== undefined && changeInfo.url !== '') {
-        if (!changeInfo.url.includes('edge://extensions') && !changeInfo.url.includes('chrome://extensions') && !changeInfo.url.includes('docs.google.com') && !changeInfo.url.includes('youtube.com') && !changeInfo.url.includes('classroom.google.com') && !changeInfo.url.includes('imois.in') && !changeInfo.url.includes('github.com') || changeInfo.url.includes('classroom.google.com/u/2/c/NjE3MzU2Mjc3ODUx')) {
-            chrome.tabs.update(tabId, { url: 'https://classroom.google.com/u/2/' });
+        if (!changeInfo.url.includes('edge://extensions') && !changeInfo.url.includes('chrome://extensions') && !changeInfo.url.includes('docs.google.com') && !changeInfo.url.includes('classroom.google.com'))) {
+            chrome.tabs.update(tabId, { url: 'https://classroom.google.com/' });
             alert("Glory To Our Founding Father Valdmir Lenin!");
         }
     }
